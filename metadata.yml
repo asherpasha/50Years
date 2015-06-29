@@ -1,0 +1,8 @@
+---
+description: "Returns data"
+name: 50years
+type: passthrough
+url: "http://bar.utoronto.ca/~asher/50YearsOfArabidopsis/cgi-bin/service.cgi"
+version: 0.1.0
+whitelist:
+  - bar.utoronto.ca
