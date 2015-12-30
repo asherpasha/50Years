@@ -2,7 +2,7 @@
 description: "Returns data"
 name: 50years
 type: passthrough
-url: "http://bar.utoronto.ca/~asher/50YearsOfArabidopsis/cgi-bin/service.cgi"
-version: 0.1.0
+url: "http://bar.utoronto.ca/webservices/araport/50Years/service.cgi"
+version: 0.1.1
 whitelist:
   - bar.utoronto.ca
