@@ -1,8 +1,43 @@
 ---
-description: "Returns data"
+
 name: 50years
+description: "Returns data for 50 years of Arabidopsis Research App"
 type: passthrough
-url: "http://bar.utoronto.ca/webservices/araport/50Years/service.cgi"
-version: 0.1.1
+url: "http://bar.utoronto.ca/webservices/araport/50Years"
+version: 0.1.2
+icon: BAR.png
+tags:
+    - 'BAR'
+    - 'Arabidopsis'
+    - '50 Years of Research'
+authors:
+    - name: Asher Pasha
+      email: asher.pasha@utoronto.ca
+      sponsor_organization: University of Toronto
+      sponsor_uri: http://www.utoronto.ca/
+
 whitelist:
-  - bar.utoronto.ca
+    - bar.utoronto.ca
+
+endpoints:
+    /access//service.cgi:
+        get:
+            description: Returns data for the app
+            produces:
+                - text/plain
+            parameters:
+                - name: file
+                  description: The codename of the file
+                  type: string
+                  required: true 
+
+sources:
+    - title: BAR Interactions Viewer
+      description: Interactions Viewer from the BAR
+      language: en-ca
+      sponsor_organization_name: University of Toronto
+      sponsor_uri: http://www.utoronto.ca/
+      provider_name: Nicholas Provart
+      provider_email: nicholas.provart@utoronto.ca
+      uri: http://bar.utoronto.ca/eplant
+
