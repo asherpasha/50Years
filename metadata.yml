@@ -5,7 +5,7 @@ description: Returns data for 50 years of Arabidopsis Research App
 type: passthrough
 url: http://bar.utoronto.ca/webservices/araport/50Years
 version: 0.1.3
-icon: /BAR.png
+icon: icon/BAR.png
 tags:
     - 'BAR'
     - 'Arabidopsis'
@@ -20,7 +20,7 @@ whitelist:
     - bar.utoronto.ca
 
 endpoints:
-    /access//service.cgi:
+    /access/service.cgi:
         get:
             description: Returns data for the app
             produces:
